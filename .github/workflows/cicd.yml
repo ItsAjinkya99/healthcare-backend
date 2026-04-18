@@ -31,3 +31,4 @@ jobs:
         run: docker rm -f healthcare-backend
       - name: Run Docker container
         run: docker run -d -p 5000:5000 --name healthcare-backend ${{ secrets.DOCKER_USERNAME }}/healthcare-backend:latest
+        
