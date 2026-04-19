@@ -10,7 +10,6 @@ router.get("/profile", verifyToken, (req, res) => {
   });
 });
 
-console.log("reached here");
 router.get("/patients", verifyToken, patientsController.getPatients);
 router.post("/patients", verifyToken, patientsController.createPatient);
 
